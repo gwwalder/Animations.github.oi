@@ -19,6 +19,7 @@ TweenMax.to(".overlay2", 2, {
   overflow:'hidden',
 });
 TweenMax.from(".testHeader", 3, {
+  delay: 0.3,
   top: "100%",
   ease: Power2.easeInOut,
   overflow:'hidden'
