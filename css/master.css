@@ -1,0 +1,196 @@
+* {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+font-family: 'Montserrat', sans-serif;
+ }
+
+.overlay2 {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #48A9A6;
+  color:
+}
+
+.overlay {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #101010;
+}
+
+.overlay p {
+  font-size: 300px;
+  font-weight: 800;
+}
+
+.screen {
+  color: #323232;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bgImg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.bgImg2 {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #636363;
+  font-size: 42px;
+  -webkit-animation: colorchange 0.5s infinite alternate;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #636363;
+  font-size: 42px;
+  padding: 0.4em 1em;
+  position: absolute;
+  top: 40%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+}
+
+.enterText {
+  position: absolute;
+}
+
+.enterText span {
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  animation-delay: 1.4s;
+}
+
+.enterText:after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #636363;
+  animation: enterText 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 1s;
+}
+.testHeader{
+  color: #ffff;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'News Cycle', sans-serif;
+  font-size: 125%;
+  z-index: -1;
+}
+@keyframes enterText {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+
+  50% {
+    left: 0%;
+    width: 100%;
+  }
+
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@keyframes appear-text {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#click {
+  top: 47%;
+  left: 50%;
+}
+
+#click span {
+  animation-delay: 2s;
+}
+
+#click.enterText:after {
+  background: #ffff;
+  animation-delay: 1.4s;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: #636363;
+  }
+
+  100% {
+    color: #ffff;
+  }
+}
+@media only screen and (max-width: 600px) {
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: #636363;
+        font-size: 30px;
+        padding: 0.4em 1em;
+        position: absolute;
+        top: 40%;
+        left: 46%;
+        transform: translate(-50%, -50%);
+    }
+    button {
+      background: none;
+      border: none;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: #636363;
+      font-size: 30px;
+      -webkit-animation: colorchange 0.5s infinite alternate;
+    }
+    #click {
+      top: 47%;
+      left: 70%;
+    }
+}
