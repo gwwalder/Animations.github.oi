@@ -1,3 +1,4 @@
+/* NOTE: Mobile */
 @media only screen and (max-width: 600px) {
       h1 {
         font-family: 'Montserrat', sans-serif;
@@ -30,4 +31,58 @@
     left: 50%;
    margin-left: -512px;   /* 50% */
  }
+}
+
+
+/* NOTE: Animations */
+
+@keyframes enterText {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+
+  50% {
+    left: 0%;
+    width: 100%;
+  }
+
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@keyframes appear-text {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#click {
+  top: 47%;
+  left: 50%;
+}
+
+#click span {
+  animation-delay: 2s;
+}
+
+#click.enterText:after {
+  background: #fff;
+  animation-delay: 1.4s;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: #636363;
+  }
+
+  100% {
+    color: #ffff;
+  }
 }

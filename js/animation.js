@@ -1,3 +1,5 @@
+//splashpage - hero animation
+
 $('#click').on('click',
   function fadeOut() {
     TweenMax.to(".btn", 0.1, {
@@ -20,7 +22,7 @@ $('#click').on('click',
     });
     TweenMax.from(".testHeader", 3, {
       delay: 0.5,
-      top: "100%",
+      top: "90%",
       ease: Power2.easeInOut,
       overflow: 'hidden'
     });
