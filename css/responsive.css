@@ -1,41 +1,43 @@
 /* NOTE: Mobile */
 @media only screen and (max-width: 600px) {
-      h1 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        color: #636363;
-        font-size: 30px;
-        padding: 0.4em 1em;
-        position: absolute;
-        top: 40%;
-        left: 46%;
-        transform: translate(-50%, -50%);
-    }
-    button {
-      background: none;
-      border: none;
-      margin: 0;
-      padding: 0;
-      cursor: pointer;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      color: #636363;
-      font-size: 30px;
-      -webkit-animation: colorchange 0.5s infinite alternate;
-    }
-    #click {
-      top: 47%;
-      left: 70%;
-    }
-    .bgImg2, .bgImg {
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #636363;
+    font-size: 30px;
+    padding: 0.4em 1em;
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+  }
+
+  button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #636363;
+    font-size: 30px;
+    -webkit-animation: colorchange 0.5s infinite alternate;
+  }
+
+  #click {
+    top: 47%;
+    left: 70%;
+  }
+
+  .bgImg2, .bgImg {
     left: 50%;
-   margin-left: -512px;   /* 50% */
- }
+    margin-left: -512px;
+    /* 50% */
+  }
 }
 
-
 /* NOTE: Animations */
-
 @keyframes enterText {
   0% {
     left: 0;

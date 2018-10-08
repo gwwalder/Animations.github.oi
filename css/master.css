@@ -1,13 +1,15 @@
 * {
-margin: 0;
-padding: 0;
-border: 0;
-outline: 0;
-font-family: 'Montserrat', sans-serif;
- }
-.splashPage{
-   height: 100vh
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.sectionOne {
+  height: 100vh
+}
+
 .overlay2 {
   z-index: 0;
   position: absolute;
@@ -48,6 +50,7 @@ font-family: 'Montserrat', sans-serif;
   left: 0;
   z-index: -2;
 }
+
 .bgImg2 {
   min-height: 100%;
   min-width: 1024px;
@@ -59,7 +62,7 @@ font-family: 'Montserrat', sans-serif;
   z-index: -1;
 }
 
-.bgImg, .bgImg2, .overlay, .overlay2{
+.bgImg, .bgImg2, .overlay, .overlay2 {
   overflow-y: scroll;
 }
 
@@ -110,6 +113,7 @@ h1 {
   animation: enterText 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   animation-delay: 1s;
 }
+
 .testHeader {
   text-align: center;
   color: #fff;
@@ -118,9 +122,18 @@ h1 {
   z-index: -1;
   font-size: 10vw;
   top: 10%;
-
 }
 
-.sectionOne{
-  color: blue;
+.sectionTwo {
+  background-color: #101010;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sectionTwo h1 {
+  position: relative;
+}
 }
