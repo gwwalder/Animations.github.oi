@@ -1,5 +1,9 @@
-//splashpage - hero animation
-
+// NOTE: force window to top when page refreshes, then hides scrollbar
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+$("body").css("overflow", "hidden")
+// NOTE: splashpage Animation, then releases scrollbar
 $('#click').on('click',
   function fadeOut() {
     TweenMax.to(".btn", 0.1, {
@@ -24,6 +28,8 @@ $('#click').on('click',
       delay: 0.5,
       top: "90%",
       ease: Power2.easeInOut,
-      overflow: 'hidden'
+      overflow: 'hidden',
     });
+
+    $("body").css("overflow", "auto")
   });
