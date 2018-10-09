@@ -35,6 +35,10 @@
     margin-left: -512px;
     /* 50% */
   }
+  .sectionTwo {
+    left: 50%;
+    margin-left: -512px;
+  }
 }
 
 /* NOTE: Animations */
