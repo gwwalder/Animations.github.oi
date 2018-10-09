@@ -28,7 +28,6 @@ $('#click').on('click',
       delay: 0.5,
       top: "90%",
       ease: Power2.easeInOut,
-      overflow: 'hidden',
     });
 
     $("body").css("overflow", "auto")
