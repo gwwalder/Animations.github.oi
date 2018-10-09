@@ -32,3 +32,10 @@ $('#click').on('click',
 
     $("body").css("overflow", "auto")
   });
+
+// NOTE: text animations
+
+sal({
+  threshold: 1,
+  once: false,
+});
