@@ -24,13 +24,12 @@
   width: 100%;
   height: 100vh;
   background: #101010;
-
 }
 
 .overlay p {
   font-size: 300px;
-  font-weight: 800;\
-
+  font-weight: 800;
+  \
 }
 
 .screen {
@@ -64,7 +63,7 @@
   z-index: -1;
 }
 
-.bgImg, .bgImg2, .overlay, .overlay2{
+.bgImg, .bgImg2, .overlay, .overlay2 {
   overflow-y: scroll;
 }
 
@@ -127,30 +126,32 @@ h1 {
 }
 
 .transision {
-background-color: #101010;
- min-height: 100px;
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
+  background-color: #101010;
+  min-height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .transision h1 {
-  position:  relative;
+  position: relative;
   text-align: center;
   vertical-align: middle;
 }
 
-.sectionTwo{
-   background-image: url("../img/cliff.jpg");
-   height:  100vh;
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   z-index: 1;
+.sectionTwo {
+  background-image: url("../img/cliff.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: ;
 }
-.sectionTwoText{
+
+#text {
   text-align: center;
-  position: relative;
+  position: inherit;
+  z-index: 1;
 }

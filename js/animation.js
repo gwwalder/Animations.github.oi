@@ -33,9 +33,11 @@ $('#click').on('click',
     $("body").css("overflow", "auto")
   });
 
-// NOTE: text animations
+// NOTE: moves second image2
 
-sal({
-  threshold: 1,
-  once: false,
+const el = document.querySelector("#module");
+
+el.addEventListener("mousemove", (e) => {
+  el.style.backgroundPositionX = -e.offsetX + "px";
+  el.style.backgroundPositionY = -e.offsetY + "px";
 });
