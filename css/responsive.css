@@ -64,7 +64,7 @@ margin: 0 auto;
 /* menu padding */
 .menu {
   position: fixed;
-  bottom: 0;
+  top: 200px;
   left: 10px;
   list-style-type: none;
   margin: 0;
@@ -74,7 +74,7 @@ margin: 0 auto;
   font-size: 25px;
   font-family: 'Raleway', sans-serif;
   height: 40px;
-  margin-bottom: 30px;
+  margin-top: 30px;
   transform: translateX(-300px);
   transition: transform 0.7s 0s cubic-bezier(1.5, 1.105, 0.24, 1),
     -webkit-transform 0.7s 0s cubic-bezier(1.5, 1.105, 0.24, 1);
@@ -92,21 +92,10 @@ margin: 0 auto;
   margin-left: 100px;
 }
 
+/* iphone X */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
 
-.swing .menu li {
-  transform: translateX(0);
-  transition: transform 0.35s 0.45s cubic-bezier(0.175, 0.785, 0.32, 1.275),
-    -webkit-tranform 0.35s 0.45s cubic-bezier(0.175, 0.785, 0.32, 1.275);
-}
-
-.swing .menu li:nth-child(2) {
-  transition-delay: 0.47s;
-}
-
-.swing .menu li:nth-child(3) {
-  transition-delay: 0.48s;
-}
-
-.swing .menu li:nth-child(4) {
-  transition-delay: 0.49s;
 }
