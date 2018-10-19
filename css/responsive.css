@@ -1,6 +1,7 @@
+
 /* NOTE: Mobile */
 @media only screen and (max-width: 600px) {
-  h1 {
+  .enterText {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #636363;
@@ -10,9 +11,12 @@
     top: 40%;
     left: 46%;
     transform: translate(-50%, -50%);
-  }
 
-  button {
+  }
+  html {
+    overflow: hidden;
+  }
+  .newBt {
     background: none;
     border: none;
     margin: 0;
@@ -22,7 +26,6 @@
     font-weight: bold;
     color: #636363;
     font-size: 30px;
-    -webkit-animation: colorchange 0.5s infinite alternate;
   }
 
   .transisionImg {
@@ -31,7 +34,7 @@
 
   #click {
     top: 47%;
-    left: 70%;
+    left: 60%;
   }
 
   .bgImg2, .bgImg {
@@ -49,5 +52,61 @@
     font-size: 10vw;
   }
 }
+.firstname{
+  display: none;
 
-/* NOTE: Animations */
+
+}
+.pageHome {
+margin: 0 auto;
+ font-size: 1em;
+}
+/* menu padding */
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  height: 40px;
+  margin-bottom: 30px;
+  transform: translateX(-300px);
+  transition: transform 0.7s 0s cubic-bezier(1.5, 1.105, 0.24, 1),
+    -webkit-transform 0.7s 0s cubic-bezier(1.5, 1.105, 0.24, 1);
+  cursor: pointer;
+}
+.menu li:nth-child(2) {
+  margin-left: 35px;
+}
+
+.menu li:nth-child(3) {
+  margin-left: 60px;
+}
+
+.menu li:nth-child(4) {
+  margin-left: 100px;
+}
+
+
+.swing .menu li {
+  transform: translateX(0);
+  transition: transform 0.35s 0.45s cubic-bezier(0.175, 0.785, 0.32, 1.275),
+    -webkit-tranform 0.35s 0.45s cubic-bezier(0.175, 0.785, 0.32, 1.275);
+}
+
+.swing .menu li:nth-child(2) {
+  transition-delay: 0.47s;
+}
+
+.swing .menu li:nth-child(3) {
+  transition-delay: 0.48s;
+}
+
+.swing .menu li:nth-child(4) {
+  transition-delay: 0.49s;
+}
