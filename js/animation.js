@@ -134,7 +134,3 @@ $('.lightsOff').click(function () {
   alert( "Load was performed." );
 });
 });
-
-$(function() {
-     $(window).scrollTo(0,1);
- });
