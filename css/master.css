@@ -176,22 +176,33 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   font-weight: 900;
 }
 
-  /* -webkit-box-shadow: inset 200px 200px 221px -121px rgba(0, 0, 0, 0.42);
-  -moz-box-shadow: inset 200px 200px 221px -121px rgba(0, 0, 0, 0.42);
-  box-shadow: inset 200px 200px 221px -121px rgba(0, 0, 0, 0.42);
-  padding: 100px 100px 100px 100px;
-  border-radius: 25px;
-  -webkit-box-shadow: 13px 9px 41px -6px rgba(0, 0, 0, 0.38);
-  -moz-box-shadow: 13px 9px 41px -6px rgba(0, 0, 0, 0.38);
-  box-shadow: 13px 9px 41px -6px rgba(0, 0, 0, 0.38); */ */
 
   .pageAbout {
-    text-align: center;
+    position: relative;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bcbcbc+0,ffffff+63 */
+background: rgb(188,188,188); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(188,188,188,1) 0%, rgba(255,255,255,1) 63%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(188,188,188,1) 0%,rgba(255,255,255,1) 63%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(188,188,188,1) 0%,rgba(255,255,255,1) 63%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bcbcbc', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    font-family: 'Raleway', sans-serif;
+    border-radius: 3%;
     overflow: visible;
-    background-color: #AAB0A6;
-    color: #2F302E;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.38);
+-moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.38);
+box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.38);
+  }
+  .pageAbout h1 {
+    text-align: center;
   }
 
+  .pageAbout p {
+    margin: 0 auto;
+    max-width: 560px;
+    text-align: left;
+
+  }
   .contentInner {
     -webkit-box-shadow: inset 200px 200px 221px -121px rgba(0, 0, 0, 0.42);
     -moz-box-shadow: inset 200px 200px 221px -121px rgba(0, 0, 0, 0.42);

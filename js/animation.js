@@ -108,29 +108,3 @@ var sweeping = $('menu, .home, .about, .portfolio, .contact').on('click',
       delay: 0.5,
     });
   });
-
-  // send email
-  $('.emailSent').click(function(){
-  Email.send("gwwalder@gmail.com",
-"('#emailAddress')",
-"This is a subject",
-"this is the body",
-"smtp.elasticemail.com",
-"gwwalder@gmail.com",
-"0bee9f62-6bc2-4acc-82fb-d83a82db78c8");
-});
-
-// turn on lights
-$('.lights').click(function () {
-  $.get( "https://maker.ifttt.com/trigger/fan/with/key/vBqmkJy6KGyavyrnMK-Yc", function( data ) {
-  $( ".result" ).html( data );
-  alert( "Load was performed." );
-});
-});
-// turn off lights
-$('.lightsOff').click(function () {
-  $.get( "https://maker.ifttt.com/trigger/fanOff/with/key/vBqmkJy6KGyavyrnMK-Yc", function( data ) {
-  $( ".result" ).html( data );
-  alert( "Load was performed." );
-});
-});
