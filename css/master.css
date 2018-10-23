@@ -178,15 +178,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
   .pageAbout {
+    margin-left: 15%;
+    margin-right: 15%;
     position: relative;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bcbcbc+0,ffffff+63 */
-background: rgb(188,188,188); /* Old browsers */
-background: -moz-linear-gradient(-45deg, rgba(188,188,188,1) 0%, rgba(255,255,255,1) 63%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, rgba(188,188,188,1) 0%,rgba(255,255,255,1) 63%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, rgba(188,188,188,1) 0%,rgba(255,255,255,1) 63%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bcbcbc', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-color: white;
+    -webkit-box-shadow: inset 54px 50px 80px -21px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 54px 50px 80px -21px rgba(0,0,0,0.75);
+box-shadow: inset 54px 50px 80px -21px rgba(0,0,0,0.75);
     font-family: 'Raleway', sans-serif;
     border-radius: 3%;
+    padding-top: 15px;
     overflow: visible;
     text-align: center;
     -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.38);
@@ -202,6 +203,11 @@ box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.38);
     max-width: 560px;
     text-align: left;
 
+  }
+
+  .pageAbout img {
+    width: 75%;
+    border-radius: 15px;
   }
   .contentInner {
     -webkit-box-shadow: inset 200px 200px 221px -121px rgba(0, 0, 0, 0.42);

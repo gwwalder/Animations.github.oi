@@ -11,6 +11,9 @@
     left: 46%;
     transform: translate(-50%, -50%);
   }
+.name{
+  display: inline-block;
+}
 
   .newBt {
     background: none;
@@ -97,3 +100,7 @@
     background-color: white;
     font-family: 'Raleway', sans-serif;
     border-radius: 3%;
+    padding: 20px 10px 13px 13px;
+
+}
+}
