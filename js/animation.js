@@ -3,6 +3,7 @@ window.onbeforeunload = function() {
   window.scrollTo(0, 0);
 };
 $(document).ready(function(){
+
 $("body").css("overflow", "hidden");
 // animates css nav bar transisions
 $('.menuToggle').click(function() {
