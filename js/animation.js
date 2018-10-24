@@ -1,4 +1,4 @@
-//force window to top when page refreshes, then hides scrollbar
+  //force window to top when page refreshes, then hides scrollbar
 window.onbeforeunload = function() {
   window.scrollTo(0, 0);
 };
@@ -25,6 +25,12 @@ $('#menuList').click(function() {
   setTimeout(function() {
     $("body").css("overflow", "auto");
   }, 700);
+});
+$('.box').click(function() {
+  $("body").css("overflow", "hidden");
+  setTimeout(function() {
+    $("body").css("overflow", "auto");
+  }, 800);
 });
 // changes displayed content and timer function
 
@@ -53,6 +59,7 @@ $('.about').click(function() {
     $('.pageContact').hide();
     $('.pagePortfolio').hide();
   }, 500);
+      $("body").css("overflow", "auto");
 });
 
 $('.contact').click(function() {
@@ -72,7 +79,7 @@ $('.portfolio').click(function() {
     $('.pagePortfolio').show();
   }, 500);
 });
-
+$("html").css({'overflow':'visible'});
 var fadeOut = $('#click').on('click',
   function fadeOut() {
     TweenMax.from(".overlay", 0.5, {
