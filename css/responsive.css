@@ -11,8 +11,9 @@
     left: 46%;
     transform: translate(-50%, -50%);
   }
-.name{
-  display: inline-block;
+.pageHome{
+  text-align: center;
+  display: inline-grid;
 }
 
   .newBt {
@@ -54,10 +55,19 @@
   .pageAbout {
     text-align: center;
   }
+  .pageHome br{
+    display: block;
+  }
 
-  .pageHome {
+  .pageHome h1 {
     text-align: center;
-    font-size: 1em;
+    font-size: 2em;
+    font-size: nowrap;
+    margin: 0 auto;
+  }
+
+  .pageHome p {
+    font-size: 10px;
   }
 
   /* menu padding */
