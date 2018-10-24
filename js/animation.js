@@ -39,7 +39,7 @@ $(document).ready(function() {
     $('.pageHome').show();
     $('.pageAbout').hide();
     $('.pageContact').hide();
-    $('.pagePortfolio').hide();
+    $('.pageResume').hide();
   }, 500);
 });
 
@@ -48,7 +48,7 @@ $('.home').click(function() {
     $('.pageHome').show();
     $('.pageAbout').hide();
     $('.pageContact').hide();
-    $('.pagePortfolio').hide();
+    $('.pageResume').hide();
   }, 500);
 });
 
@@ -57,7 +57,7 @@ $('.about').click(function() {
     $('.pageHome').hide();
     $('.pageAbout').show();
     $('.pageContact').hide();
-    $('.pagePortfolio').hide();
+    $('.pageResume').hide();
   }, 500);
       $("body").css("overflow", "auto");
 });
@@ -67,16 +67,16 @@ $('.contact').click(function() {
     $('.pageHome').hide();
     $('.pageAbout').hide();
     $('.pageContact').show();
-    $('.pagePortfolio').hide();
+    $('.pageResume').hide();
   }, 500);
 });
 
-$('.portfolio').click(function() {
+$('.Resume').click(function() {
   setTimeout(function() {
     $('.pageHome').hide();
     $('.pageAbout').hide();
     $('.pageContact').hide();
-    $('.pagePortfolio').show();
+    $('.pageResume').show();
   }, 500);
 });
 $("html").css({'overflow':'visible'});
@@ -100,7 +100,7 @@ var fadeOut = $('#click').on('click',
   });
 
 // nav toggle sweep between transisions
-var sweeping = $('menu, .home, .about, .portfolio, .contact').on('click',
+var sweeping = $('menu, .home, .about, .Resume, .contact').on('click',
   function sweeping() {
     TweenMax.to(".menuToggle", 0.5, {
       height: '300vh',
