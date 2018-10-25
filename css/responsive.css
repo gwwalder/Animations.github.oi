@@ -12,13 +12,19 @@
     transform: translate(-50%, -50%);
   }
 
-  .logo{
+  .logo {
     display: none;
   }
-.pageHome{
-  text-align: center;
-  display: inline-grid;
-}
+
+  .pageHome {
+    text-align: center;
+    display: inline-grid;
+    padding-left: -40px
+  }
+
+  .pageHome p {
+    font-size: 10px;
+  }
 
   .newBt {
     background: none;
@@ -59,7 +65,8 @@
   .pageAbout {
     text-align: center;
   }
-  .pageHome br{
+
+  .pageHome br {
     display: block;
   }
 
@@ -107,7 +114,7 @@
     margin-left: 100px;
   }
 
-  .pageAbout, .pageResume{
+  .pageAbout, .pageResume {
     position: relative;
     margin-left: -50%;
     margin-right: -50%;
@@ -115,30 +122,42 @@
     font-family: 'Raleway', sans-serif;
     border-radius: 3%;
     padding: 20px 10px 13px 13px;
+  }
 
-}
-.pageResume h2{
-  text-align: left;
-  padding-left: 10px
-}
-.pageResume{
-  font-family: 'Cormorant Garamond';
-  padding-left: 20px;
-}
-.pageResume li{
-  font-size: 110%;
-}
-.pageResume p{
-  text-align: left;
-  font-size: 90%;
-  padding-left: 30px;
-  padding-right: 20px;
-}
-.pageContact{
-  text-align: center;
-}
-.pageContact p{
-  margin: 0 auto;
-  margin-left: -20px;
-}
+  .pageResume h2 {
+    text-align: left;
+    padding-left: 10px
+  }
+
+  .pageResume {
+    font-family: 'Cormorant Garamond';
+    padding-left: 20px;
+  }
+
+  .pageResume li {
+    font-size: 110%;
+  }
+
+  .pageResume p {
+    text-align: left;
+    font-size: 90%;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+  .pageContact h1 {
+    padding-left: 10px;
+    font-size: 2em;
+    text-align: center;
+    color: #4f5c5d;
+  }
+
+  .pageContact p {
+    font-size: 1em;
+    text-align: center;
+    color: : #4f5c5d;
+  }
+  .fab{
+    padding-top: 10px;
+  }
 }

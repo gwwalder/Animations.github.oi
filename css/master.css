@@ -307,13 +307,6 @@ margin-top: -107px;
 .pageResume p{
   padding-left: 30px;
   font-size: 90%
-}
-  -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.38);
-  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.38);
-  padding-bottom: 11in;
-  padding-right: 8in;
-  text-align: center;
-  border-radius: 8px;
 
 }
 .pageResume li{
@@ -323,7 +316,24 @@ margin-top: -107px;
 .pageResume h1 {
   text-align: center;
 }
-
+.pageContact h1{
+  font-size: 66px;
+}
+.pageContact{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-left: -20px;
+}
+.pageContact p{
+  padding-top: 15px;
+  font-size: 2em;
+}
+.fab{
+  padding-top: 55px;
+  font-size: 400%;
+  color: #59646b;
+  padding: 20px;
+}
 /* landing animation */
 .landingPage {
   background-color: #adadad;
